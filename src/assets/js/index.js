@@ -55,8 +55,7 @@ class Splash {
             { "message": "Pourquoi tombons-nous, Bruce ? Pour apprendre à nous relever.", "author": "batman" },
             { "message": "Do a barrel roll!", "author": "starfox" },
             { "message": "Hasta la vista, baby.", "author": "terminator" },
-            { "message": "Jusqu'ici, tout va bien.", "author": "la haine" },
-            { "message": "You either die a hero, or you live long enough to see yourself become the villain.", "author": "the dark knight" }
+            { "message": "Jusqu'ici, tout va bien.", "author": "la haine" }
         ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
