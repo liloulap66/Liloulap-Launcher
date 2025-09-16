@@ -30,9 +30,33 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n'est pas un os, mais un kernel.", "author": "Luuxis" }
+            { "message": "The cake is a lie", "author": "portal" },
+            { "message": "L'home est né sur la terre rien ne l'oblige a y mourir", "author": "interstellar" },
+            { "message": "Say hello to my little friend!", "author": "scarface" },
+            { "message": "J’ai glissé, chef.", "author": "les bronzés" },
+            { "message": "Warriors, come out to play!", "author": "the warriors" },
+            { "message": "I'll be back.", "author": "terminator" },
+            { "message": "Au revoir les enfants.", "author": "malle" },
+            { "message": "Snake? Snake?! SNAAAAAKE!", "author": "metal gear solid" },
+            { "message": "Houston, we have a problem.", "author": "apollo 13" },
+            { "message": "Mamma mia!", "author": "mario" },
+            { "message": "Roads? Where we're going, we don't need roads.", "author": "back to the future" },
+            { "message": "Je suis ton père.", "author": "star wars" },
+            { "message": "Nothing is true, everything is permitted.", "author": "assassin's creed" },
+            { "message": "Pourquoi si sérieux ?", "author": "the dark knight" },
+            { "message": "Shall we play a game?", "author": "wargames" },
+            { "message": "Exterminate!", "author": "doctor who" },
+            { "message": "C'était pas ma guerre.", "author": "rambo" },
+            { "message": "War. War never changes.", "author": "fallout" },
+            { "message": "La peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance.", "author": "star wars" },
+            { "message": "Would you kindly?", "author": "bioshock" },
+            { "message": "Un grand pouvoir implique de grandes responsabilités.", "author": "spiderman" },
+            { "message": "It's dangerous to go alone! Take this.", "author": "zelda" },
+            { "message": "Pourquoi tombons-nous, Bruce ? Pour apprendre à nous relever.", "author": "batman" },
+            { "message": "Do a barrel roll!", "author": "starfox" },
+            { "message": "Hasta la vista, baby.", "author": "terminator" },
+            { "message": "Jusqu'ici, tout va bien.", "author": "la haine" },
+            { "message": "You either die a hero, or you live long enough to see yourself become the villain.", "author": "the dark knight" }
         ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
