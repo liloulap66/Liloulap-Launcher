@@ -1,7 +1,7 @@
 {
     "name": "Liloulap-Launcher",
     "preductname": "Liloulap Launcher",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Launcher Mincraft pour le serveur liloulap network",
     "main": "src/app.js",
     "author": {
@@ -9,7 +9,7 @@
         "email": "liloulap@liloulap.fr",
         "url": "https://github.com/liloulap66"
     },
-    "url": "http://launcher.liloulap.fr",
+    "url": "https://launcher.liloulap.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
