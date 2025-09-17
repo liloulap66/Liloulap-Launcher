@@ -1,7 +1,7 @@
 {
     "name": "Liloulap-Launcher",
     "preductname": "Liloulap Launcher",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Launcher Mincraft pour le serveur liloulap network",
     "main": "src/app.js",
     "author": {
@@ -14,7 +14,7 @@
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/liloulap/Liloulap-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://web.liloulap.fr/storage/img/logo.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
@@ -22,6 +22,7 @@
         "ignore": "**/test"
     },
     "dependencies": {
+        "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
         "minecraft-java-core": "^4.1.4",
         "node-bdd": "^2.0.4",

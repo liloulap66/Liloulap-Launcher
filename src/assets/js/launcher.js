@@ -15,8 +15,35 @@ const { AZauth, Microsoft, Mojang } = require('minecraft-java-core');
 const { ipcRenderer } = require('electron');
 const fs = require('fs');
 const os = require('os');
+const DiscordRPC = require('discord-rpc');
+
 
 class Launcher {
+    async initDiscordRPC() {
+        const clientId = "1417571975609454770"; // ton client_id du JSON
+    
+        const rpc = new DiscordRPC.Client({ transport: 'ipc' });
+        DiscordRPC.register(clientId);
+    
+        rpc.on('ready', () => {
+            console.log('Discord RPC connected!');
+            rpc.setActivity({
+                details: 'Sur Liloulap Network',
+                state: 'web.liloulap.fr',
+                startTimestamp: Date.now(),
+                largeImageKey: 'logo_large', // Image que tu as ajoutée sur Discord Developer Portal
+                largeImageText: 'Liloulap Network',
+                instance: false,
+            });
+        });
+    
+        try {
+            await rpc.login({ clientId });
+        } catch (err) {
+            console.error('Impossible de connecter la RPC Discord:', err);
+        }
+    }
+    
     async init() {
         this.initLog();
         console.log('Initializing Launcher...');
@@ -29,6 +56,7 @@ class Launcher {
         await this.initConfigClient();
         this.createPanels(Login, Home, Settings);
         this.startLauncher();
+        this.initDiscordRPC();
     }
 
     initLog() {
@@ -262,5 +290,6 @@ class Launcher {
         }
     }
 }
+
 
 new Launcher().init();
