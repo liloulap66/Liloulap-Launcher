@@ -234,7 +234,7 @@ class Home {
                 path: configClient.java_config.java_path,
             },
 
-            JVM_ARGS:  options.jvm_args ? options.jvm_args : [],
+            JVM_ARGS:  options.jvm_args ? [...options.jvm_args, '-Da1Df3GG=true'] : ['-Da1Df3GG=true'],
             GAME_ARGS: options.game_args ? options.game_args : [],
 
             screen: {
