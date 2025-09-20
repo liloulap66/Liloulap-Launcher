@@ -33,7 +33,6 @@ class Splash {
             { "message": "The cake is a lie", "author": "portal" },
             { "message": "L'home est né sur la terre rien ne l'oblige a y mourir", "author": "interstellar" },
             { "message": "Say hello to my little friend!", "author": "scarface" },
-            { "message": "J’ai glissé, chef.", "author": "les bronzés" },
             { "message": "Warriors, come out to play!", "author": "the warriors" },
             { "message": "I'll be back.", "author": "terminator" },
             { "message": "Au revoir les enfants.", "author": "malle" },
